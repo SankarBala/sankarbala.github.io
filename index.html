@@ -1,961 +1,1541 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <!-- <base href="https://sankarbala.github.io/" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sankar Bala - Professional FullStack Web Developer with 8 years of experience.">
+    <meta name="keywords" content="Sankar Bala, FullStack Developer, Web Developer Dhaka, React Developer, Laravel, E-Commerce Development">
+    <meta name="author" content="Sankar Bala">
+    <title>Sankar Bala | FullStack Web Developer</title>
 
-  <!-- Open Graph -->
-<meta property="og:url"          content="Sankar Bala" />
-<meta property="og:type"         content="Website" />
-<meta property="og:title"        content="Fullstack Web Developer" />
-<meta property="og:description"  content="A full stack Freelancer Web and App Developer" />
-<meta property="og:image"        content="/assets/img/me.jpg" />
-
-  <title>Welcome to my portfolio</title>
-  <meta name="description" content="Sankar Bala portfolio website">
-  <meta name="keywords" content="web design, web development, website, website development,
-    website design, web app, web app development, responsive, mobile app, 
-    mobile app development, bootstrap, tailwind, tailwindcss, javascript, html, css, scss,
-    sass, jquery, react, redux, redux thunk, php, mysql, laravel, api, api, development, 
-    api intigrations, ecommerce, ecommerce development, wordpress, wordpress development, 
-    wordpress theme development, cpanel, hosting, domain, git, github, gitlab, bitbucket," />
-
-  <!-- Favicons -->
-  <link href="assets/img/react.webp" rel="icon" />
-  <link href="assets/img/react.webp" rel="apple-touch-icon" />
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic"
-    rel="stylesheet" />
-
-  <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-  <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet" />
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDB1QW9ZZF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-MDB1QW9ZZF');
-  </script>
-  <script data-ad-client="ca-pub-2436019565644218" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-<body>
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v10.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-  <!-- Your Chat Plugin code -->
-  <div class="fb-customerchat" attribution="setup_tool" page_id="116353183602171">
-  </div>
-
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>Hi, I'm Sankar Bala!</h1>
-    <h2>I am a Fullstack Web Developer</h2>
-    <a href="#about" class="btn-get-started scrollto">
-      <i class="bi bi-person-bounding-box"></i> More about me
-    </a>
-  </section><!-- End Hero -->
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="/">Sankar Bala</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a target="cv" class="nav-link" href="/sankar-bala.pdf" download="portfolio@sankar_bala">Download CV</a>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about px-3">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
-            <div class="content d-flex flex-column justify-content-center">
-              <h4>Welcome to my portfolio</h4>
-              <h3>Let's be familiar, I am Sankar Bala</h3>
-              <h5 class="text-success">A Proffessional FullStack Web Developer</h5>
-              <p class="my-2 text-primary">
-                My target is client's satisfaction and my satisfaction is to fulfill client's target.
-              </p>
-              <div class="row">
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-x-diamond-fill text-warning"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Projects</strong> I have already done more than 20 projects successfully.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box text-info">
-                    <i class="bi bi-emoji-smile text-info"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Happy Clients: </strong>
-                      All the clients are happy to me for my dedicated working.
-                    </p>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock text-success"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Years of experience</strong>
-                      I am engaged in this industry for 8 years.</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-award text-danger"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Training</strong> I have completed more than 5 training about website and website related
-                      technologies.</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>My Skills</h2>
-          <p></p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-4 mb-4">
-            <h3>Frontend technologies</h3>
-            <div class="progress">
-              <span class="skill">HTML <i class="val">Complete</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS / SCSS<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="progress">
-              <span class="skill">SCSS <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div> -->
-
-            <div class="progress">
-              <span class="skill">Bootstrap / Tailwind CSS<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar " role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript / JQuery<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">React JS <i class="val">Perfect</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Redux <i class="val">Full</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-
-            <h3>Backend technologies</h3>
-
-            <div class="progress">
-              <span class="skill">PHP (OOP)<i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">MySQL <i class="val">Avarage</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-            <div class="progress">
-              <span class="skill">Laravel <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress Theme Development <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <h3>Others</h3>
-
-            <div class="progress">
-              <span class="skill">Git<i class="val">As needed</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SEO (Onpage) <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-            <!-- <div class="progress">
-              <span class="skill">Digital Marketing <i class="val">Avarage</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div> -->
-
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="progress">
-              <span class="skill">Adobe XD <i class="val">Avarage</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="progress">
-              <span class="skill">MS Office <i class="val">Avarage</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div> -->
-
-            <div class="progress">
-              <span class="skill">Typing Speed <i class="val">E-40WPM/B-30WPM</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <!-- <section id="resume" class="resume section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <h3 class="text-dark">
-            I am currently looking for a full time position in an environment that offers a greater challenge, increased
-            benefits for my family and the opportunity to help the company advance efficiently and productively
-            hard work toward the achievements, result oriented as well as problem shooter than a problem watcher,
-            finally dedicated to the team.
+    <link rel="icon" type="image/png" href="./img/sm/favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            500: '#f97316', // Orange theme
+                            600: '#ea580c',
+                            700: '#c2410c',
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'floating': '0 30px 60px -20px rgba(234, 88, 12, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { background-color: #f8fafc; color: #334155; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
         
-          </h3>
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.5, 0, 0, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        .typing-cursor::after { content: '|'; animation: blink 1s step-end infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .project-img-wrapper { overflow: hidden; position: relative; }
+        .project-img-wrapper img { transition: transform 0.7s ease; }
+        .project-card:hover .project-img-wrapper img { transform: scale(1.08); }
+        .project-overlay { transition: opacity 0.3s ease; }
+        .project-card:hover .project-overlay { opacity: 1; }
+        
+        .blob-shape { animation: morph 8s ease-in-out infinite; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        @keyframes morph {
+            0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+            100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ea580c; }
+
+        .testimonial-swiper .swiper-pagination-bullet {
+            background-color: #cbd5e1;
+            opacity: 1;
+            transition: all 0.3s;
+            width: 8px;
+            height: 8px;
+        }
+        .testimonial-swiper .swiper-pagination-bullet-active {
+            background-color: #ea580c;
+            width: 24px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-100 selection:text-primary-700 flex flex-col min-h-screen">
+
+    <!-- Header Container -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-300 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <!-- Topbar -->
+        <div id="topbar" class="block bg-black/40 text-slate-300 text-xs py-2.5 transition-all duration-300 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+                <div class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2">
+                    <a href="#" class="phone-toggle hover:text-white transition flex items-center"><i class="fas fa-phone-alt mr-2"></i> 01531-827045</a>
+                    <a href="mailto:sankarbala232@gmail.com" class="hover:text-white transition flex items-center"><i class="fas fa-envelope mr-2"></i> sankarbala232@gmail.com</a>
+                    <span class="hidden sm:flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 02, FPAB Rupayan Tower, Purana Paltan, Dhaka</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/sankar.bala.0" target="_blank" class="hover:text-white transition"><i class="fab fa-facebook-f text-sm"></i></a>
+                    <a href="https://github.com/sankarbala" target="_blank" class="hover:text-white transition"><i class="fab fa-github text-sm"></i></a>
+                    <a href="https://www.youtube.com/@snkrbala" target="_blank" class="hover:text-white transition"><i class="fab fa-youtube text-sm"></i></a>
+                    <a href="https://wa.me/8801531827045" target="_blank" class="hover:text-white transition"><i class="fab fa-whatsapp text-sm"></i></a>
+                </div>
+            </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Alice Barkley</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                  developing user-centered digital/print marketing material from initial concept to final, polished
-                  deliverable.</em></p>
-              <p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-              </p>
-            </div>
+        <!-- Navbar -->
+        <nav id="navbar" class="py-4 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-14">
+                    <a href="#home" class="flex items-center gap-3 group">
+                        <div class="w-11 h-11 bg-primary-600 rounded-xl flex items-center justify-center text-white text-lg font-extrabold group-hover:bg-primary-500 transition-colors shadow-sm">SB</div>
+                        <div class="flex flex-col justify-center">
+                            <span class="font-extrabold text-2xl text-white tracking-tight leading-none">Sankar Bala</span>
+                            <span class="text-[11px] text-primary-500 font-extrabold uppercase tracking-widest mt-1.5">FullStack Developer</span>
+                        </div>
+                    </a>
+                    
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="#home" class="text-slate-300 hover:text-primary-500 font-medium transition">Home</a>
+                        <a href="#about" class="text-slate-300 hover:text-primary-500 font-medium transition">About</a>
+                        <a href="#services" class="text-slate-300 hover:text-primary-500 font-medium transition">Services</a>
+                        <a href="#experience" class="text-slate-300 hover:text-primary-500 font-medium transition">Experience</a>
+                        <a href="#portfolio" class="text-slate-300 hover:text-primary-500 font-medium transition">Portfolio</a>
+                        <a href="#contact" class="px-6 py-2.5 bg-primary-600 text-white rounded-full font-semibold hover:bg-primary-700 hover:shadow-lg hover:shadow-primary-600/30 transition-all">Let's Talk</a>
+                    </div>
 
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                ut dignissimos deleniti nerada porti sand markend</p>
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-slate-300 hover:text-primary-500 text-2xl focus:outline-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
-                unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
-                dila</p>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 absolute w-full top-full left-0 border-t border-slate-800 shadow-2xl">
+            <div class="px-4 py-6 space-y-2 text-center">
+                <a href="#home" class="mobile-link block py-3 text-slate-300 hover:text-primary-500 hover:bg-slate-800 rounded-lg font-medium">Home</a>
+                <a href="#about" class="mobile-link block py-3 text-slate-300 hover:text-primary-500 hover:bg-slate-800 rounded-lg font-medium">About</a>
+                <a href="#services" class="mobile-link block py-3 text-slate-300 hover:text-primary-500 hover:bg-slate-800 rounded-lg font-medium">Services</a>
+                <a href="#experience" class="mobile-link block py-3 text-slate-300 hover:text-primary-500 hover:bg-slate-800 rounded-lg font-medium">Experience</a>
+                <a href="#portfolio" class="mobile-link block py-3 text-slate-300 hover:text-primary-500 hover:bg-slate-800 rounded-lg font-medium">Portfolio</a>
+                <a href="#contact" class="mobile-link block py-3 mt-4 text-white font-bold bg-primary-600 rounded-lg mx-4">Let's Talk</a>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                  communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                  project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                  design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                  advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-              </p>
-            </div>
-          </div>
         </div>
+    </header>
 
-      </div>
-    </section> -->
-    <!-- End Resume Section -->
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 min-h-screen flex items-center">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#ea580c 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="reveal">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-slate-800/60 border border-slate-700 mb-6 shadow-sm backdrop-blur-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-primary-500 animate-pulse mr-3"></span>
+                        <span class="text-slate-200 text-sm font-bold tracking-wide uppercase">Available for Hire</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
+                        Engineering <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-amber-400">Digital Excellence.</span>
+                    </h1>
+                    <h2 class="text-xl md:text-2xl text-slate-300 mb-6 h-8 typing-cursor font-medium" id="typewriter"></h2>
+                    <p class="text-lg text-slate-400 mb-10 max-w-xl leading-relaxed">
+                        I am Sankar Bala, a FullStack Web Developer with 8+ years of experience building scalable, responsive, and data-driven solutions for global and local businesses.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-floating hover:-translate-y-1">
+                            Explore Projects <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#contact" class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-4 rounded-full font-semibold transition-all border border-slate-700 shadow-sm hover:shadow-md">
+                            Contact
+                        </a>
+                    </div>
+                </div>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>As a person currently I am serving the following services with good quality support. </p>
+                <!-- Graphic/Image Content -->
+                <div class="relative hidden lg:block reveal">
+                    <div class="absolute inset-0 bg-primary-500/20 blob-shape transform scale-105 opacity-50 z-0"></div>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" alt="Workspace Concept" class="relative z-10 rounded-[2rem] shadow-2xl border-4 border-white transform hover:rotate-1 transition-transform duration-500 object-cover h-[500px] w-full">
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-code"></i></div>
-              <h4 class="title"><a href="">Web Design</a></h4>
-              <p class="description">
-                I can design an responsive, mobile friendly, flexible & fast rendering interactive website for you with
-                different trending technologies.
-              </p>
+    <!-- Stats Section -->
+    <section class="py-16 bg-white border-b border-slate-100 relative z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-slate-100 reveal">
+                <div class="p-4">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary-600 mb-2 flex justify-center"><span class="counter" data-target="8">0</span>+</h3>
+                    <p class="text-slate-500 font-medium uppercase tracking-wider text-sm">Years Experience</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary-600 mb-2 flex justify-center"><span class="counter" data-target="40">0</span>+</h3>
+                    <p class="text-slate-500 font-medium uppercase tracking-wider text-sm">Projects Delivered</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary-600 mb-2 flex justify-center"><span class="counter" data-target="50">0</span>+</h3>
+                    <p class="text-slate-500 font-medium uppercase tracking-wider text-sm">Happy Clients</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-primary-600 mb-2 flex justify-center"><span class="counter" data-target="100">0</span>%</h3>
+                    <p class="text-slate-500 font-medium uppercase tracking-wider text-sm">Client Satisfaction</p>
+                </div>
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-code-curly"></i></div>
-              <h4 class="title"><a href="">Web Development</a></h4>
-              <p class="description">
-                For your business you should be have a good looking well managable website. As well as your website may
-                be
-                able to calculate properly accounting your business. Which we provide at a low cost.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-wordpress"></i></div>
-              <h4 class="title"><a href="">Wordpress Theme Development</a></h4>
-              <p class="description">
-                Do you need a website for a low cost. Don't worry wordpress is totally free.
-                And I can build a wordpress theme for your website with a very low cost.
-                It will be very easy to manage. I also train up you.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-desktop"></i></div>
-              <h4 class="title"><a href="">Web Template Design</a></h4>
-              <p class="description">
-                Do you need web template? I also provide web template design with visual and coding technologies.
-                I have many more ready made web templates if you need.
-              </p>
-            </div>
-          </div>
-
         </div>
+    </section>
 
-      </div>
-    </section><!-- End Services Section -->
+    <!-- About & Skills -->
+    <section id="about" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">About Me</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Bridging design and engineering for a flawless web experience.</h3>
+            </div>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="relative reveal hidden md:block">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000" alt="Coding" class="rounded-3xl shadow-soft w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 rounded-3xl ring-1 ring-inset ring-black/10"></div>
+                </div>
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>
-            I have already design and develop many website and web applications successfully. Some of them are presented
-            in the below.
-            If you want to make a web application for your business. Don't forget to contact me. I will advice you at
-            free of cost.
-          </p>
+                <!-- Text & Skills -->
+                <div class="reveal">
+                    <p class="text-slate-600 mb-8 leading-relaxed text-lg">
+                        Based in Dhaka, I specialize in full-cycle web development. From designing intuitive user interfaces to architecting robust backend databases, I have successfully delivered large-scale projects including corporate portals, real estate platforms, and educational management systems.
+                    </p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <!-- Skill 1 -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-800">Frontend (JS, React, Bootstrap, Tailwind)</span>
+                                <span class="text-primary-600 font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-amber-400 to-primary-600 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-800">Backend (PHP, Laravel, Database)</span>
+                                <span class="text-primary-600 font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-amber-400 to-primary-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3 -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-800">E-Commerce Solutions</span>
+                                <span class="text-primary-600 font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-amber-400 to-primary-600 h-2.5 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-800">DevOps & Cloud (AWS, Docker, CI/CD)</span>
+                                <span class="text-primary-600 font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-amber-400 to-primary-600 h-2.5 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 5 -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-bold text-slate-800">UI/UX & Prototyping (Figma, Adobe XD)</span>
+                                <span class="text-primary-600 font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-amber-400 to-primary-600 h-2.5 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 flex flex-col sm:flex-row gap-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary-600 text-xl mr-4 flex-shrink-0">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-slate-900 font-bold">Availability</h4>
+                                <p class="text-slate-500 text-sm mt-1">Open to Freelance & Full-time Opportunities</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center text-primary-600 text-xl mr-4 flex-shrink-0">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-slate-900 font-bold">Working Hours</h4>
+                                <p class="text-slate-500 text-sm mt-1">Highly Flexible (Adaptable to your timezone)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-design">Design</li>
-              <li data-filter=".filter-development">PHP/Laravel</li>
-              <li data-filter=".filter-wordpress">Wordpress</li>
-            </ul>
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">What I Do</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900">Digital Services we provide</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- Web Dev -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">FullStack Development</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Building scalable, responsive, and well-managed business websites and web applications using modern technologies like React and Laravel.</p>
+                </div>
+                <!-- UI/UX -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-object-group"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">UI/UX Design</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Crafting intuitive, accessible, and visually striking user interfaces that provide seamless user experiences across all devices.</p>
+                </div>
+                <!-- Graphics Design -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Graphics Design</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Creating compelling visual assets, branding materials, and stunning graphics using tools like Adobe Photoshop to elevate your brand identity.</p>
+                </div>
+                <!-- SEO -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">On-Page SEO</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Implementing advanced SEO strategies to improve organic rankings, visibility, and drive targeted traffic to your digital platforms.</p>
+                </div>
+                <!-- Digital Marketing -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Digital Marketing</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Strategizing and executing targeted digital marketing campaigns to maximize online presence, audience engagement, and conversion rates.</p>
+                </div>
+                <!-- E-Commerce -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow group">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl text-primary-600 mb-6 group-hover:-translate-y-2 transition-transform">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Solutions</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">Designing highly manageable, scalable custom e-commerce platforms optimized for sales, speed, and seamless user experiences.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/nc.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>National College</h4>
-                <p>Educational Institute</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/nc.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="nationalcollege"><i class="bx bx-plus"></i></a>
-                <a target="_blank" href="https://nationalcollege.edu.bd/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
+    <!-- Working Process -->
+    <section class="py-24 bg-slate-50 relative border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">Workflow</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900">How I Deliver Success</h3>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/arc.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Arfius Collection</h4>
-                <p>Bloging Website</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/arc.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="arfiuscollection"><i class="bx bx-plus"></i></a>
-                <a target="_blank" href="https://www.arfiuscollection.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm transform hover:scale-110 transition-transform">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">1. Discovery</h4>
+                    <p class="text-slate-500 text-sm">Understanding your business needs, goals, and target audience.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-primary-50 text-primary-600 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm transform hover:scale-110 transition-transform">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">2. Design</h4>
+                    <p class="text-slate-500 text-sm">Creating responsive, modern UI/UX layouts tailored to your brand.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-rose-50 text-rose-600 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm transform hover:scale-110 transition-transform">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">3. Development</h4>
+                    <p class="text-slate-500 text-sm">Building scalable front-end and secure back-end architecture.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-sm transform hover:scale-110 transition-transform">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">4. Deployment</h4>
+                    <p class="text-slate-500 text-sm">Testing, SEO optimization, and launching to production servers.</p>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mnc.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Mahanagar Nursing College</h4>
-                <p>Educational and Deplometic Institute</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mnc.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="mncedu"><i class="bx bx-plus"></i></a>
-                <a target="_blank" href="https://www.mncedu.com/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sakalerpata.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Sakaler Pata</h4>
-                <p>Newspaper Website</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sakalerpata.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="sakalerpata"><i class="bx bx-plus"></i></a>
-                <a target="_blank" href="https://www.sakalerpata.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bengalcons.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Bengal Consultancy</h4>
-                <p>Tour and travel consultant</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/bengalcons.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="bengalconsultancy"><i class="bx bx-plus"></i></a>
-                <a target="_blank" href="https://www.bengalconsultancy.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Ticket service provider</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/booking.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bus_booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Bus Booking</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/bus_booking.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Bus booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hotel_booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Hotel Booking</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/hotel_booking.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Hotel booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/car_booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Car Booking</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/car_booking.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Car booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/flight_booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Flight Booking</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/flight_booking.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Flight booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-design">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/train_booking.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Booking</h4>
-                <p>Training Booking</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/train_booking.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Train booking"><i class="bx bx-plus"></i></a>
-                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mobileload.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web Development</h4>
-                <p>mobileload.xyz</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mobileload.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Mobile load"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://mobileload.xyz" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/ftraing.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web Development</h4>
-                <p>freelancertraining.xyz</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/ftraing.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="Freelancer training"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://freelancertraining.xyz" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-development">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/poygambd.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web Development</h4>
-                <p>poygambd.com</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/poygambd.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="poygambd"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://poygambd.com" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/sodeshbarta71.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WordPress Website</h4>
-                <p>sodeshbarta71.com</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/sodeshbarta71.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="sodeshbarta71"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://sodeshbarta71.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/amaderittefaq.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WordPress Website</h4>
-                <p>amaderittefaq.com</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/amaderittefaq.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="amaderittefaq"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://amaderittefaq.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mainlink.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WordPress Website</h4>
-                <p>mainlink.gamingwithtr.com</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/mainlink.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="mainlink"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://mainlink.gamingwithtr.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-wordpress">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/easylink.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>WordPress Website</h4>
-                <p>easylink.gamingwithtr.com</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/easylink.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="easylink"><i class="bx bx-plus"></i></a>
-                <a target="portfolio" href="https://easylink.gamingwithtr.com/" title="More Details"><i
-                    class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
         </div>
+    </section>
 
-      </div>
-    </section><!-- End Portfolio Section -->
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16">
+                
+                <!-- Sticky Left Side -->
+                <div class="lg:w-1/3 lg:sticky lg:top-32 self-start reveal">
+                    <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">My Career</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Professional Experience</h3>
+                    <p class="text-slate-600 mb-8 leading-relaxed">A timeline of my professional journey, transitioning from foundational frontend development to leading enterprise-level web and e-commerce solutions.</p>
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-white border border-slate-200 text-slate-800 font-bold rounded-full shadow-sm hover:shadow-md hover:border-primary-500 hover:text-primary-600 transition-all duration-300">
+                        Hire Me Now <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
 
+                <!-- Right Side List -->
+                <div class="lg:w-2/3 space-y-8 reveal">
+                    <!-- Item 1 -->
+                    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-soft border border-slate-100 hover:shadow-floating hover:border-primary-200 transition-all duration-300">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <h4 class="text-2xl font-bold text-slate-900">Senior FullStack Developer</h4>
+                            <span class="px-4 py-1.5 bg-primary-50 text-primary-700 font-bold text-sm rounded-full whitespace-nowrap self-start sm:self-auto border border-primary-100">2021 - Present</span>
+                        </div>
+                        <h5 class="text-primary-600 font-semibold mb-6 flex items-center"><i class="fas fa-building mr-2"></i> Independent Professional</h5>
+                        <p class="text-slate-600 leading-relaxed mb-6">Leading full-cycle web development for corporate and enterprise clients. Specializing in robust Laravel backends and dynamic React JS frontends, ensuring high performance and SEO optimization.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Laravel</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">React JS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Next.js</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">TypeScript</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Node.js</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Express.js</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">MongoDB</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">PostgreSQL</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Redux Toolkit</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">GraphQL</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">REST API</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Docker</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Kubernetes</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">AWS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">CI/CD Pipeline</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Git/GitHub</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Microservices</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Redis</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">System Architecture</span>
+                        </div>
+                    </div>
 
+                    <!-- Item 2 -->
+                    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-soft border border-slate-100 hover:shadow-floating hover:border-primary-200 transition-all duration-300">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <h4 class="text-2xl font-bold text-slate-900">Web Development Specialist</h4>
+                            <span class="px-4 py-1.5 bg-slate-100 text-slate-600 font-bold text-sm rounded-full whitespace-nowrap self-start sm:self-auto">2018 - 2021</span>
+                        </div>
+                        <h5 class="text-slate-500 font-semibold mb-6 flex items-center"><i class="fas fa-building mr-2"></i> Agency & Freelance</h5>
+                        <p class="text-slate-600 leading-relaxed mb-6">Developed over 20 large-scale projects including Real Estate platforms (Assort Properties), Educational Portals (National College), and Healthcare websites (SB Laboratories).</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">PHP</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">MySQL</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">WordPress</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">WooCommerce</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Bootstrap</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">JavaScript (ES6+)</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">jQuery</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">AJAX</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">REST APIs</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Firebase</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Webhooks</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Plugin Development</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">cPanel / WHM</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">SSL Config</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Google Analytics</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">SEO Optimization</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">FullStack Integration</span>
+                        </div>
+                    </div>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
+                    <!-- Item 3 -->
+                    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-soft border border-slate-100 hover:shadow-floating hover:border-primary-200 transition-all duration-300">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
+                            <h4 class="text-2xl font-bold text-slate-900">Frontend & E-Commerce Dev</h4>
+                            <span class="px-4 py-1.5 bg-slate-100 text-slate-600 font-bold text-sm rounded-full whitespace-nowrap self-start sm:self-auto">2016 - 2018</span>
+                        </div>
+                        <h5 class="text-slate-500 font-semibold mb-6 flex items-center"><i class="fas fa-building mr-2"></i> Tech Industry</h5>
+                        <p class="text-slate-600 leading-relaxed mb-6">Built a strong foundation in HTML, CSS, JavaScript, and custom E-Commerce platform development. Specialized in creating mobile-friendly, responsive layouts for local businesses.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">HTML5/CSS3</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">JavaScript</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">SCSS / SASS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">LESS</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">BEM Methodology</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">CSS Animations</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Web Performance</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Responsive Design</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Mobile-First UI</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">UI/UX Layouts</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Figma to Code</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Adobe XD</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Photoshop</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Illustrator</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Cross-browser</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Web Accessibility</span>
+                            <span class="px-3 py-1 bg-slate-50 border border-slate-100 text-slate-600 text-xs font-bold rounded-lg">Shopify</span>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>
-            I like to make free minded conversation with you. If you have any questions please contact me with no doubt.
-            I never charge for advice about website design and development. So be friendly to touch me.
-          </p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>Sankar Bala</h3>
-
-
-              <p></p>
-              <div class="social-links">
-                <a target="_blank" href="https://web.facebook.com/iamsankarbala/" class="facebook"><i
-                    class="bi bi-facebook"></i></a>
-                <a target="_blank" href="https://www.twitter.com/sankar__bala/" class="twitter"><i
-                    class="bi bi-twitter"></i></a>
-                <a target="_blank" href="https://www.instagram.com/sankar__bala/" class="instagram"><i
-                    class="bi bi-instagram"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/sankar-bala/" class="linkedin"><i
-                    class="bi bi-linkedin"></i></a>
-                <a target="_blank" href="https://www.github.com/sankarbala/" class="linkedin"><i
-                    class="bi bi-github"></i></a>
-              </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="info">
-              <div class="d-flex align-items-center">
-                <i class="bi bi-geo-alt"></i>
-                <p>121/A Tejkunipara<br>Firmgate, Dhaka-1215</p>
-              </div>
+    <!-- Detailed Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-white relative">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <div class="d-flex align-items-center mt-4">
-                <i class="bi bi-envelope"></i>
-                <a href="mailto:sankarbala232@gmail.com?subject=Web Services">
-                  <p>sankarbala232@gmail.com</p>
+    <!-- Detailed Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16 text-center reveal">
+                <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">Portfolio</h2>
+                <h3 class="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Featured Projects</h3>
+                
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mt-8" id="filter-btns">
+                    <button class="filter-btn active px-6 py-2 rounded-full font-medium text-sm transition-all bg-primary-600 text-white border border-primary-600 shadow-md hover:bg-white hover:text-primary-600" data-filter="all">All Work</button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium text-sm transition-all bg-white border border-slate-200 text-slate-600 hover:border-primary-300 hover:text-primary-600" data-filter="web">Web Dev</button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium text-sm transition-all bg-white border border-slate-200 text-slate-600 hover:border-primary-300 hover:text-primary-600" data-filter="uiux">UI/UX Design</button>
+                    <button class="filter-btn px-6 py-2 rounded-full font-medium text-sm transition-all bg-white border border-slate-200 text-slate-600 hover:border-primary-300 hover:text-primary-600" data-filter="graphics">Graphics</button>
+                </div>
+            </div>
+
+            <!-- Changed to a 3-column grid to accommodate more items beautifully -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- WEB DEV 1: Euro Gulf -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="web">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/eurogulf.jpg" alt="Euro Gulf" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://eurogulfoverseas.com" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Website <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Web Development</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://eurogulfoverseas.com" target="_blank">Euro Gulf Overseas Ltd.</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Engineered a comprehensive web solution for an overseas manpower recruiting agency with dynamic job modules.
+                        </p>
+                        <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4"> 
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Job Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Training Programs</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Certificates Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Visa Processing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Candidate Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Employer Portal</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Application Tracking</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Online Registration</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Language Courses</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Technical Courses</span> 
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Document Verification</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Interview Scheduling</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Notifications</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admin Panel</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Dashboard</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Staff Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEB DEV 2: National College -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="web">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/national.jpg" alt="National College" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://www.nationalcollege.edu.bd/" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Website <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Web Development</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://www.nationalcollege.edu.bd/" target="_blank">National College</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Transformed the digital presence for National College, Bangladesh with a responsive campus interface and student portal.
+                        </p>
+                        <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admissions</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Courses</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Departments</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Teacher Profiles</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Student Portal</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Notices</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Events</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Gallery</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Scholarships</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Library</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Results</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Routine</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Contact Forms</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">CMS</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admin Panel</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEB DEV 3: Assort Properties -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="web">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/assort.jpg" alt="Assort Properties" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://www.assortpropertiesltd.com/" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Website <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Web Development</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://www.assortpropertiesltd.com/" target="_blank">Assort Properties Ltd.</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Built a high-end corporate showcase with real-time availability statuses and interactive project galleries.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Property Listings</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Advanced Search</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Property Details</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Project Gallery</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Ongoing Projects</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Upcoming Projects</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Ready Apartments</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Handover Projects</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Landowners</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Project Status</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Contact Inquiry</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Image Gallery</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Location Maps</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Company Profile</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admin Panel</span> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEB DEV 4: SB Laboratories -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="web">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/sblab.jpg" alt="SB Laboratories" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://sblabbd.com/" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Website <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Web Development</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://sblabbd.com/" target="_blank">SB Laboratories</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Created a digital platform for a pharmaceutical company with product catalogs and medical UI styling.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Product Catalog</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">E-Commerce</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Product Categories</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Product Search</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Shopping Cart</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Ayurvedic Products</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Herbal Products</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Nutraceuticals</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Pharmaceuticals</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Veterinary Division</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Health Blogs</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">FAQ</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Contact Forms</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Team Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admin Panel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX 1: Train Booking -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="uiux">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/booking/train_booking.jpg" alt="Train Booking UI" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="./img/sm/booking/train_booking.jpg" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Design <i class="fas fa-image ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Train Booking App</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Modern, clean, and intuitive user interface designed for a seamless train ticket booking experience. Focuses on accessibility and quick navigation.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Train Search</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Route Selection</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Date Picker</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Passenger Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Train Listings</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Seat Availability</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Advanced Filters</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Fare Classes</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Departure Filter</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Arrival Filter</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Journey Details</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Flow</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive UI</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Pagination</span> 
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX 2: Flight Booking -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="uiux">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/booking/flight_booking.jpg" alt="Flight Booking UI" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="./img/sm/booking/flight_booking.jpg" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Design <i class="fas fa-image ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Flight Reservation App</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            A sleek UI/UX design featuring interactive flight selection, dynamic pricing displays, and a smooth checkout flow for travelers.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Flight Search</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">One-Way & Return</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Route Selection</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Date Picker</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Passenger Management</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Flight Listings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Airline Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Stop Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Departure Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Price Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Fare Comparison</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Flight Details</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Flow</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive UI</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Pagination</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Admin Dashboard</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Management</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX 3: Car Booking -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="uiux">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/booking/car_booking.jpg" alt="Car Booking UI" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="./img/sm/booking/car_booking.jpg" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Design <i class="fas fa-image ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Car Rental Interface</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Mobile-first user interface for a car rental service. Includes geolocation features, vehicle filtering, and an elegant booking interface.
+                        </p>
+                      <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Car Search</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Location Selection</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Pickup & Drop-off</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Date & Time Picker</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Car Listings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Vehicle Details</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Car Type Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Price Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Transmission Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Passenger Capacity</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Baggage Capacity</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Customer Reviews</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Instant Booking</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive UI</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Management</span> 
+                    </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX 4: Hotel Booking -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="uiux">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/booking/hotel_booking.jpg" alt="Hotel Booking UI" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="./img/sm/booking/hotel_booking.jpg" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Design <i class="fas fa-image ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Hotel Booking Platform</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            User-centric design for a hotel reservation application. Emphasizes high-quality imagery, clear pricing, and date selection flow.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Hotel Search</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">City & Destination</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Check-in & Check-out</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Room & Guest Selection</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Hotel Listings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Hotel Details</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Property Filters</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Price Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Star Ratings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Guest Reviews</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Amenities</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Availability Check</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Instant Booking</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Management</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive UI</span> 
+                    </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX 5: Bus Booking -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="uiux">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/booking/bus_booking.jpg" alt="Bus Booking UI" class="w-full h-full object-cover object-top">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="./img/sm/booking/bus_booking.jpg" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Design <i class="fas fa-image ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Bus Ticket Booking</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Streamlined ticket booking interface designed with clear route visualization, seat selection components, and passenger details form.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Bus Search</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Route Selection</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Travel Date</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Seat Selection</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Bus Listings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Operator Listings</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Bus Details</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Departure Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Price Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Bus Type Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Operator Filter</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Fare Comparison</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Booking Flow</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Ticket Management</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Responsive UI</span> 
+                    </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHICS 1: Corporate Branding -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="graphics">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/branding.jpg" alt="Corporate Branding" class="w-full h-full object-cover">
+                        <!-- <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <button class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Graphics <i class="fas fa-paint-brush ml-2"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Graphics Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Corporate Identity Branding</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Comprehensive branding package including logo design, typography selection, color palette layout, and corporate stationery mockups.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Logo Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Identity</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Guidelines</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Business Cards</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Letterhead Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Envelope Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Presentation Folder</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">ID Card Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Lanyard Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Notebook Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Packaging Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Coffee Cup Branding</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Stationery Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Typography System</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Color Palette</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Mockup Presentation</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHICS 2: Digital Marketing -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="graphics">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/social.jpg" alt="Social Media Campaign" class="w-full h-full object-cover">
+                        <!-- <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <button class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Campaign <i class="fas fa-paint-brush ml-2"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Graphics Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition">Social Media Ad Graphics</h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            High-conversion social media post designs, promotional banners, and visual assets created for an extensive digital marketing campaign.
+                        </p>
+                      <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Social Media Ads</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Facebook Posts</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Instagram Posts</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Promotional Banners</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Product Promotions</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Offer Campaigns</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Awareness</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Typography Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Photo Manipulation</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Product Mockups</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Call-to-Action Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Marketing Creatives</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Square Format</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Story Design</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Canva Ready</span>
+                        <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Print Ready</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHICS 3: Euro Gulf -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="graphics">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm//euro_gfx.jpg" alt="Euro Gulf Graphics" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://www.facebook.com/eurogulfoverseasltd/photos" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Graphics <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Graphics Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://www.facebook.com/eurogulfoverseasltd/photos" target="_blank">Euro Gulf Graphics</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Social media campaigns, promotional banners, and branding materials designed for Euro Gulf Overseas Ltd.
+                        </p>
+                        <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Social Media Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Facebook Marketing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Creative Ad Design</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Campaign Creatives</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Job Advertisement</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Promotional Graphics</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Carousel Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Awareness</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Content Strategy</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Visual Branding</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Typography Design</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Photo Editing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Offer Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Lead Generation</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Meta Ads</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Canva & Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHICS 4: Blue Rain International -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="graphics">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="./img/sm/blue_gfx.jpg" alt="Blue Rain International" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://www.facebook.com/blueraininternationl/photos" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Graphics <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Graphics Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://www.facebook.com/blueraininternationl/photos" target="_blank">Blue Rain International</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Digital marketing assets, branding, and promotional graphic designs tailored for Blue Rain International.
+                        </p>
+                       <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Social Media Management</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Facebook Marketing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Instagram Marketing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Travel Promotions</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Visa Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Job Advertisements</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Hiring Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Holiday Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Promotional Graphics</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Event Promotions</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Carousel Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Awareness</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Content Strategy</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Meta Ads</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Lead Generation</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Canva & Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GRAPHICS 5: SB Digital -->
+                <div class="project-card bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-soft portfolio-item reveal" data-category="graphics">
+                    <div class="project-img-wrapper h-56 w-full bg-slate-100 relative">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800" alt="SB Digital" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-primary-900/80 opacity-0 flex items-center justify-center backdrop-blur-sm">
+                            <a href="https://www.facebook.com/SBdgtal/photos" target="_blank" class="px-6 py-3 bg-white text-primary-700 font-bold rounded-full transform translate-y-4 hover:bg-primary-50 transition duration-300">
+                                View Graphics <i class="fas fa-external-link-alt ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-primary-600 text-xs font-bold uppercase tracking-wider mb-2 block">Graphics Design</span>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 hover:text-primary-600 transition"><a href="https://www.facebook.com/SBdgtal/photos" target="_blank">SB Digital Campaigns</a></h3>
+                        <p class="text-slate-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                            Creative social media banners, advertisement creatives, and engagement-driven graphics for SB Digital.
+                        </p>
+                      <div class="flex flex-wrap gap-2 border-t border-slate-100 pt-4">
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Personal Branding</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Social Media Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Personal Promotions</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Creative Ad Design</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Facebook Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Instagram Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Event Promotions</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Quote Graphics</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Awareness Campaigns</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Motivational Posts</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Content Strategy</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Visual Storytelling</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Typography Design</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Photo Editing</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Canva & Photoshop</span>
+                            <span class="grow basis-0 px-2 py-1 text-[12px] font-bold bg-slate-50 border border-slate-100 text-slate-600 rounded whitespace-nowrap">Brand Consistency</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-primary-600 font-bold uppercase tracking-widest text-sm mb-2">Testimonials</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900">What Clients Say</h3>
+            </div>
+            
+            <!-- Swiper -->
+            <div class="swiper testimonial-swiper overflow-hidden reveal pb-16">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 relative h-full flex flex-col">
+                            <i class="fas fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 flex-grow">"Sankar built an incredibly robust system for our recruiting agency. The backend is fast, secure, and easily manageable. Highly recommended developer!"</p>
+                            <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                                <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-slate-500 font-bold">EG</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Director</h4>
+                                    <p class="text-slate-500 text-xs">Euro Gulf Overseas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 relative h-full flex flex-col">
+                            <i class="fas fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 flex-grow">"The digital transformation for our college was flawless. Our students and faculty now have a seamless portal for notices and academic structures."</p>
+                            <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                                <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-slate-500 font-bold">NC</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Administration</h4>
+                                    <p class="text-slate-500 text-xs">National College</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 relative h-full flex flex-col">
+                            <i class="fas fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 flex-grow">"Our real estate portal is faster and more beautiful than ever. The React implementation was exactly what we needed to attract high-end investors."</p>
+                            <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                                <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-slate-500 font-bold">AP</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Marketing Head</h4>
+                                    <p class="text-slate-500 text-xs">Assort Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 relative h-full flex flex-col">
+                            <i class="fas fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 flex-grow">"Working with Sankar was a game-changer. His attention to detail and commitment to deadlines are unparalleled. A true professional."</p>
+                            <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                                <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-slate-500 font-bold">BR</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">CEO</h4>
+                                    <p class="text-slate-500 text-xs">Blue Rain Int'l</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-slate-50 p-8 rounded-2xl shadow-sm border border-slate-100 relative h-full flex flex-col">
+                            <i class="fas fa-quote-left text-4xl text-primary-100 absolute top-6 right-6"></i>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 flex-grow">"The e-commerce solution he developed for us boosted our sales by 40% in the first quarter. The UI is clean, and the system is very stable."</p>
+                            <div class="flex items-center gap-4 border-t border-slate-200 pt-4">
+                                <div class="w-10 h-10 bg-white shadow-sm rounded-full flex items-center justify-center text-slate-500 font-bold">SB</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900 text-sm">Founder</h4>
+                                    <p class="text-slate-500 text-xs">SB Laboratories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination !bottom-4"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white relative border-t border-slate-100 flex-grow">
+        <!-- Abstract shape -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary-50 rounded-full mix-blend-multiply filter blur-[80px] opacity-70 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-16 shadow-2xl border border-slate-100 reveal relative z-10 overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-center">
+                    
+                    <div class="lg:col-span-2">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Let's build something <br/><span class="text-primary-600">incredible.</span></h2>
+                        <p class="text-slate-600 mb-10 text-lg">
+                            Ready to take your digital presence to the next level? Reach out today.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white group-hover:border-primary-600 transition-all shadow-sm">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Call Me</p>
+                                    <a href="#" class="phone-toggle text-slate-900 font-bold text-lg hover:text-primary-600 transition">01531-827045</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white group-hover:border-primary-600 transition-all shadow-sm">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Email Me</p>
+                                    <a href="mailto:sankarbala232@gmail.com" class="text-slate-900 font-bold text-lg hover:text-primary-600 transition">sankarbala232@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center group">
+                                <div class="w-14 h-14 aspect-square rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-primary-600 group-hover:bg-primary-600 group-hover:text-white group-hover:border-primary-600 transition-all shadow-sm">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="ml-5">
+                                    <p class="text-sm text-slate-500 font-bold uppercase tracking-wider mb-1">Visit Office</p>
+                                    <p class="text-slate-900 font-semibold leading-snug">02, FPAB Rupayan Tower, Box Culvert Rd, Purana Paltan, Dhaka-1000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Form -->
+                    <div class="lg:col-span-3 bg-slate-50 border border-slate-100 p-8 md:p-10 rounded-3xl">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Send a Message</h3>
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <input type="text" name="name" placeholder="Your Name" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition shadow-sm" required>
+                                <input type="email" name="email" placeholder="Your Email" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition shadow-sm" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition shadow-sm">
+                            </div>
+                            <div class="mb-6">
+                                <textarea name="message" placeholder="How can I help you?" rows="5" class="w-full bg-white border border-slate-200 rounded-xl px-5 py-4 text-slate-700 focus:outline-none focus:ring-2 focus:ring-primary-500/50 focus:border-primary-500 transition resize-none shadow-sm" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 rounded-xl transition duration-300 flex justify-center items-center shadow-md">
+                                Submit Request <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phone Options Modal -->
+    <div id="phoneModal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] items-center justify-center">
+        <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 shadow-2xl transform scale-95 opacity-0 transition-all duration-300" id="phoneModalContent">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-slate-900">Get in touch</h3>
+                <button id="closePhoneModal" class="text-slate-400 hover:text-rose-500 transition-colors focus:outline-none"><i class="fas fa-times text-xl"></i></button>
+            </div>
+            <div class="space-y-4">
+                <a href="tel:01531827045" class="w-full flex items-center justify-center gap-3 bg-primary-50 hover:bg-primary-600 text-primary-600 hover:text-white font-bold py-4 px-4 rounded-xl transition-all shadow-sm hover:shadow-md">
+                    <i class="fas fa-phone-alt text-lg"></i> Direct Call
                 </a>
-              </div>
-
-              <div class="d-flex align-items-center my-4">
-                <i class="bi bi-phone"></i>
-                <a href="tel:+8801531827045">
-                  <p>+8801531827045</p>
+                <a href="https://wa.me/8801531827045" target="_blank" class="w-full flex items-center justify-center gap-3 bg-emerald-50 hover:bg-emerald-500 text-emerald-600 hover:text-white font-bold py-4 px-4 rounded-xl transition-all shadow-sm hover:shadow-md">
+                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp
                 </a>
-              </div>
-
             </div>
-          </div>
-
-          <div class="col-lg-5 col-md-8">
-            <form id="contact-form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
-              </div>
-              <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <span class="text-success mt-1 mb-3 text-center d-block" id="msg"></span>
-              <button id="btnSubmit" type="submit" class="btn btn-success">Send Message</button>
-            </form>
-
-          </div>
-
         </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sankar</span></strong>. All Rights Reserved
-      </div>
     </div>
-  </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-12 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-8 gap-6">
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="#home" class="flex items-center gap-3 group mb-4">
+                        <div class="w-11 h-11 bg-primary-600 rounded-xl flex items-center justify-center text-white text-lg font-extrabold group-hover:bg-primary-500 transition-colors shadow-sm">SB</div>
+                        <div class="flex flex-col justify-center text-left">
+                            <span class="font-extrabold text-2xl text-white tracking-tight leading-none">Sankar Bala</span>
+                            <span class="text-[11px] text-primary-500 font-extrabold uppercase tracking-widest mt-1.5">FullStack Developer</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm max-w-sm leading-relaxed">
+                        A passionate FullStack Web Developer dedicated to crafting scalable, modern, and user-centric digital experiences.
+                    </p>
+                </div>
+                <div class="flex space-x-4 mt-2 md:mt-0">
+                    <a href="https://www.facebook.com/sankar.bala.0" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/sankarbala" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="https://www.youtube.com/@snkrbala" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-colors"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/8801531827045" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-primary-600 hover:text-white transition-colors"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+                <p>&copy; <span id="year"></span> Sankar Bala. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex gap-4">
+                    <span>Dhaka | Bangladesh</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/purecounter/purecounter.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <!-- Interactive Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#contact-form').on('submit', function (e) {
-        e.preventDefault();
-        $('#msg').html('Please wait...');
-        $('#btnSubmit').attr('disabled', true);
-        $.ajax({
-          url: 'https://script.google.com/macros/s/AKfycbwe0oy5EosSQX512lXgcGEwxrK4Eq0mqUexTK5CdUIrno5on-2uRfUJThuQL74pvTcUGw/exec',
-          type: 'post',
-          data: $('#contact-form').serialize(),
-          success: function (result) {
-            $('#contact-form')[0].reset();
-            $('#msg').html('Thank You I will reply you soon.');
-            $('#btnSubmit').attr('disabled', false);
-            //window.location.href='';
-          }
+        // Navbar Styling on Scroll
+        const header = document.getElementById('header');
+        const topbar = document.getElementById('topbar');
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                if(header) header.classList.add('shadow-sm');
+                if(topbar) {
+                    topbar.classList.add('h-0', 'opacity-0', 'py-0');
+                    topbar.classList.remove('py-2.5');
+                }
+                if(navbar) {
+                    navbar.classList.remove('py-4');
+                    navbar.classList.add('py-3');
+                }
+            } else {
+                if(header) header.classList.remove('shadow-sm');
+                if(topbar) {
+                    topbar.classList.remove('h-0', 'opacity-0', 'py-0');
+                    topbar.classList.add('py-2.5');
+                }
+                if(navbar) {
+                    navbar.classList.add('py-4');
+                    navbar.classList.remove('py-3');
+                }
+            }
         });
-      });
 
-    });
-  </script>
+        // Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
 
+        if(btn && menu) {
+            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+            links.forEach(link => link.addEventListener('click', () => menu.classList.add('hidden')));
+        }
+
+        // Typewriter Effect
+        const titles = ["FullStack Web Developer", "React JS Specialist", "Laravel & PHP Expert", "E-Commerce Developer"];
+        let count = 0; let index = 0; let isDeleting = false;
+        
+        function type() {
+            const typewriterElem = document.getElementById('typewriter');
+            if(!typewriterElem) return;
+
+            const currentText = titles[count % titles.length];
+            const letter = isDeleting ? currentText.slice(0, --index) : currentText.slice(0, ++index);
+            
+            typewriterElem.textContent = letter;
+            
+            let speed = isDeleting ? 30 : 80;
+            if(!isDeleting && letter === currentText) { speed = 2500; isDeleting = true; }
+            else if(isDeleting && letter === '') { isDeleting = false; count++; speed = 500; }
+            
+            setTimeout(type, speed);
+        }
+        setTimeout(type, 1000);
+
+        // Counter Animation Setup
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000; // ms
+                const increment = target / (duration / 16); // 60 FPS
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        };
+
+        // Scroll Reveal & Trigger Counters
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // Trigger counter animation when stats section is visible
+                    if (entry.target.classList.contains('divide-slate-100') && !animated) {
+                        animateCounters();
+                        animated = true;
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+        
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Portfolio Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-primary-600', 'text-white', 'shadow-md', 'border-primary-600', 'hover:bg-white');
+                    b.classList.add('bg-white', 'border-slate-200', 'text-slate-600', 'hover:border-primary-300');
+                });
+                btn.classList.add('bg-primary-600', 'text-white', 'shadow-md', 'border-primary-600', 'hover:bg-white');
+                btn.classList.remove('bg-white', 'border-slate-200', 'text-slate-600', 'hover:border-primary-300');
+
+                const filter = btn.getAttribute('data-filter');
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => { item.style.opacity = '1'; item.style.transform = 'scale(1)'; }, 50);
+                    } else {
+                        item.style.opacity = '0'; item.style.transform = 'scale(0.95)';
+                        setTimeout(() => { item.style.display = 'none'; }, 300);
+                    }
+                });
+            });
+        });
+
+        // Phone Modal Logic
+        const phoneToggles = document.querySelectorAll('.phone-toggle');
+        const phoneModal = document.getElementById('phoneModal');
+        const closePhoneModal = document.getElementById('closePhoneModal');
+        const phoneModalContent = document.getElementById('phoneModalContent');
+
+        function openPhoneModal(e) {
+            e.preventDefault();
+            phoneModal.classList.remove('hidden');
+            phoneModal.classList.add('flex');
+            setTimeout(() => {
+                phoneModalContent.classList.remove('scale-95', 'opacity-0');
+                phoneModalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closePhoneModalHandler() {
+            phoneModalContent.classList.remove('scale-100', 'opacity-100');
+            phoneModalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                phoneModal.classList.add('hidden');
+                phoneModal.classList.remove('flex');
+            }, 300);
+        }
+
+        phoneToggles.forEach(link => {
+            link.addEventListener('click', openPhoneModal);
+        });
+
+        if (closePhoneModal) {
+            closePhoneModal.addEventListener('click', closePhoneModalHandler);
+        }
+        
+        if (phoneModal) {
+            phoneModal.addEventListener('click', (e) => {
+                if (e.target === phoneModal) {
+                    closePhoneModalHandler();
+                }
+            });
+        }
+
+        // Form handler (POST to Google Apps Script)
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            if(!btn) return;
+            
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.classList.add('opacity-80', 'cursor-not-allowed');
+            btn.disabled = true;
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxucvYYE4h3ZZT5wmxtlOAWTICVAAUsPklR2AmalUIzkNcH3bwpvuqxruqDAYKc4IKA/exec';
+            
+            try {
+                // Post data using FormData
+                await fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                });
+                
+                btn.innerHTML = '<i class="fas fa-check"></i> Sent Successfully!';
+                btn.classList.replace('bg-primary-600', 'bg-emerald-600');
+                form.reset();
+            } catch (error) {
+                console.error('Error!', error.message);
+                btn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Failed to Send';
+                btn.classList.replace('bg-primary-600', 'bg-rose-500');
+            } finally {
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('bg-emerald-600', 'bg-rose-500');
+                    btn.classList.add('bg-primary-600');
+                    btn.classList.remove('opacity-80', 'cursor-not-allowed');
+                    btn.disabled = false;
+                }, 3000);
+            }
+        }
+
+        // Testimonial Swiper
+        const swiper = new Swiper('.testimonial-swiper', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 32,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
 </body>
-
 </html>
