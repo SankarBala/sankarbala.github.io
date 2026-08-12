@@ -18,7 +18,7 @@
     <meta property="og:type" content="Website" />
     <meta property="og:title" content="Fullstack Web Developer" />
     <meta property="og:description" content="A full stack Freelancer Web and App Developer" />
-    <meta property="og:image" content="/img/sm/favicon.png" />
+    <meta property="og:image" content="/assets/img/me.jpg" />
 
     <title>Sankar Bala | FullStack Web Developer</title>
 
@@ -29,6 +29,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
+
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <script type="module" src="/src/app.js"></script>
 
@@ -2192,6 +2195,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

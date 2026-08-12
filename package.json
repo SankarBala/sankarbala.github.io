@@ -1,0 +1,30 @@
+{
+  "name": "sankarbala.github.io",
+  "version": "1.0.0",
+  "description": "I am a **FullStack Web Developer** with over 8 years of experience building scalable, responsive, and data-driven solutions for both global and local businesses. Based in Dhaka, I specialize in bridging the gap between sophisticated design and robust engineering to create flawless web experiences.",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SankarBala/sankarbala.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SankarBala/sankarbala.github.io/issues"
+  },
+  "homepage": "https://github.com/SankarBala/sankarbala.github.io#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.1"
+  },
+  "dependencies": {
+    "swiper": "^14.1.0"
+  }
+}
