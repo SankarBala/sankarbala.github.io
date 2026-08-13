@@ -8,10 +8,10 @@ function copyImgFolder() {
     name: "copy-img-folder",
 
     closeBundle() {
-      const source = path.resolve("img");
-      const srouce2 = path.resolve("cv");
-      const destination = path.resolve("docs/img");
-      const destination2 = path.resolve("docs/cv");
+      const source = path.resolve("src/img");
+      const srouce2 = path.resolve("src/cv");
+      const destination = path.resolve("docs/src/img");
+      const destination2 = path.resolve("docs/src/cv");
 
       fs.cpSync(source, destination, {
         recursive: true,
